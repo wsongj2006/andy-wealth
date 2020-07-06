@@ -18,6 +18,7 @@
     <modules>
         <module>spring-aspectj-proxy-aop</module>
         <module>spring-mysql</module>
+        <module>my-leetcode</module>
     </modules>
 
 

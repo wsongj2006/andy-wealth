@@ -19,6 +19,7 @@
         <module>spring-aspectj-proxy-aop</module>
         <module>spring-mysql</module>
         <module>my-leetcode</module>
+        <module>my-webflux</module>
     </modules>
 
 

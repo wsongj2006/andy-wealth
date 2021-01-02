@@ -20,6 +20,8 @@
         <module>spring-mysql</module>
         <module>my-leetcode</module>
         <module>my-webflux</module>
+        <module>my-test</module>
+        <module>my-kafka</module>
     </modules>
 
 

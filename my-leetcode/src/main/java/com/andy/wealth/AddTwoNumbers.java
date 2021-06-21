@@ -31,6 +31,8 @@ public class AddTwoNumbers {
             int value1 = l1 != null ? l1.val : 0;
             int value2 = l2 != null ? l2.val : 0;
             int sum = value1 + value2 + carry;
+            carry = sum / 10;
+            sum = sum % 10;
             if (sumNode == null) {
                 head = new ListNode(sum);
                 sumNode = head;
@@ -39,7 +41,7 @@ public class AddTwoNumbers {
                 sumNode.next = newNode;
                 sumNode = sumNode.next;
             }
-            carry = sum / 10;
+
 
             if (l1 != null) {
                 l1 = l1.next;

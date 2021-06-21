@@ -6,7 +6,30 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <!-- 开启注解扫描 -->
+    <!--
     <context:component-scan base-package="com.andy.wealth"></context:component-scan>
-    <!-- 启动@aspectj的自动代理支持-->
+
     <aop:aspectj-autoproxy />
+
+    -->
+
+    <context:component-scan base-package="com.andy.wealth"></context:component-scan>
+
+    <aop:aspectj-autoproxy />
+
+    <bean name="person" class="com.andy.wealth.beans.Person">
+        <property name="address" ref="address"></property>
+        <property name="phone" ref="phone"></property>
+        <property name="name" value="Andy"></property>
+    </bean>
+
+    <bean name="address" class="com.andy.wealth.beans.Address" >
+        <property name="person" ref="person"></property>
+        <property name="desc" value="Test Desc"></property>
+    </bean>
+
+    <bean name="phone" class="com.andy.wealth.beans.Phone">
+        <property name="person" ref="person"></property>
+        <property name="number" value="123456"></property>
+    </bean>
 </beans>

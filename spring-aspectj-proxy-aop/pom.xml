@@ -12,7 +12,7 @@
     <artifactId>spring-aspectj-proxy-aop</artifactId>
 
     <properties>
-        <spring_version>5.1.16.RELEASE</spring_version>
+        <spring_version>5.2.22.RELEASE</spring_version>
     </properties>
 
     <dependencies>
